@@ -1,0 +1,20 @@
+CREATE TABLE User (
+	user_ID INT NOT NULL,
+	first_name VARCHAR(30),
+	last_name VARCHAR(30),
+	email VARCHAR(50),
+	password VARCHAR(50) NOT NULL,
+	PRIMARY KEY(user_ID)
+
+)
+
+CREATE TABLE Loan(
+	loan_ID INT NOT NULL,
+	book_name VARCHAR(50),
+	author VARCHAR(50),
+	date_loaned DATE,
+	date_due DATE,
+	user_ID INT NOT NULL,
+	PRIMARY KEY(loan_ID)
+	FOREIGN KEY(user_ID) REFERENCES User(user_ID)
+)
