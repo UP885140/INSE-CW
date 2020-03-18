@@ -9,6 +9,7 @@ div {
   margin-bottom: 30px;
   font-size: 1.3vw;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -29,13 +30,12 @@ ul {
 }
 
 li {
-  float: center;
   border-right: 1.5px solid #bbb;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
@@ -43,6 +43,12 @@ li a {
 
 li a:hover:not(.active) {
   background-color: red;
+}
+
+.box {
+  float: left;
+  width: 20%;
+  padding: 30px;
 }
 
 footer {
@@ -58,13 +64,24 @@ footer {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 900px;
+  margin-top: 100px;
 }
 
 .image1 {
-  background-size:75% 75%;
+  background-size: 75% 75%;
   border: 2px solid black;
+}
 
+.image2 {
+  border: 2px solid black;
+  float: left;
+  margin-top: 10px;
+}
+
+.section2 {
+  margin-top: 13px;
+  text-align: center;
+  overflow: auto;
 }
 
 .button {
@@ -76,10 +93,7 @@ footer {
   font-size: 16px;
   cursor: pointer;
   margin-left: 100px;
-
 }
 
 .button:hover {
   background-color: red;
-
-  .fo
