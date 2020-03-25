@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>login Page</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+
+  <h1>Login Page</h1>
+
+  <form name="login" class="form">
+    Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+    <input type="button" onclick="check(this.form)" value="Login"/>
+    <input type="reset" value="Cancel"/>
+</form>
+    <script language="javascript">
+      function check(form)
+{
+
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('loan page.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+</body>
+
+</html>
+
+<footer class="footer" style="margin-top:400px;">
+  <p> Here is a link to our GitHub page <a href="https://github.com/" target="_top">Click Here</a> Here you can see our code. <button class="button" type="button" onclick="alert('if you need help please contact IThelp@port.ac.uk')">Help!</button></P>
+</footer>
+
+
+
+
+</body>
+
+</html>
